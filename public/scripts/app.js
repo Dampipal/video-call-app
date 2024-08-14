@@ -1,4 +1,9 @@
 const socket = io();
+
+
+socket.on('connect', () => {
+    console.log('Connected to server');
+})
 const startCallButton = document.getElementById('start-call');
 const endCallButton = document.getElementById('end-call');
 const muteButton = document.getElementById('mute');
